@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1100px) {
+    .nav ,.form-control {
+     display: none;
+    }
+  }
+
+
+.headersection .navbar {
+  background-color: white;
+  box-shadow: none;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-brand img {
+  width: 150px;
+  height: 40px;
+  margin-left: 150px;
+  object-fit: contain;
+  position: relative;
+}
+
+.headersection .navbar .searchsection {
+  display: flex;
+  position: relative;
+  margin-left: 250px;
+  align-items: center;
+  justify-content: center;
+}
+.headersection .navbar .searchsection .form-control,
+.headersection .navbar .searchsection:focus {
+  outline: none;
+  overflow: hidden;
+  border: 1px solid lightgray;
+  border-bottom: none;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  margin-top: 20px;
+  border-radius: 3px;
+  background-color: #f5f6fa;
+  transition: none;
+  border-bottom-color: lightgrey;
+}
+
+.headersection .navbar .searchsection ::placeholder {
+  font-size: 14px;
+  padding: 5px;
+  text-align: center;
+}
+
+.nav-link {
+  color: black;
+  opacity: 0.7;
+}
+
+.profilepic {
+  object-fit: cover;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+}
+.send {
+  transform: rotateZ(-15deg);
+}
+
+.statussection {
+  position: relative;
+  margin-top: 105px;
+  display: flex;
+  flex-direction: row;
+  margin-left: -15px;
+}
+
+.statussection .card {
+  box-shadow: none;
+  border: 1px solid lightgray;
+  align-items: center;
+  justify-content: center;
+}
+
+.statussection .card-body {
+  display: flex;
+  flex-direction: row;
+}
+
+.statusprofile {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 10px;
+}
+
+.statusprofile .status {
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  border: 2px solid rgb(217, 223, 217);
+  padding: 2px;
+  object-fit: contain;
+  margin-left: 10px;
+}
+.statusprofile .name {
+  text-align: center;
+  font-size: 11px;
+  color: lightblue;
+  margin-top: 2px;
+  margin-left: 5px;
+}
+
+.userpost {
+  position: relative;
+  margin-left: 105px;
+  margin-top: 25px;
+}
+
+.userpost .card {
+  width: 605px !important;
+}
+.userpost .card .card-body .header-part {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  align-items: center;
+  justify-content: start;
+}
+.userpost .card .card-body .header-part > a {
+  margin-left: 400px;
+  margin-top: 5px;
+}
+.userpost .card .card-body .header-part .username {
+  font-size: 12px;
+  align-items: center;
+  position: relative;
+  margin: 5px 5px 0px 10px;
+  cursor: pointer;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.userpost .card .card-body .header-part .account {
+  max-width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.userpost .card .card-body .post {
+  max-width: 400px;
+}
+.postedimage {
+  width: 570px;
+  margin-top: 20px;
+}
+
+.fixed {
+  position: fixed;
+  background-attachment: fixed;
+  margin-left: 900px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+.footer .leftsection {
+  display: flex;
+  flex-direction: row;
+   align-items: flex-end;
+   text-align: justify;
+   position: relative;
+   margin-top: 10px;
+
+}
+.footer .leftsection .material-icons{
+    margin-right: 10px;
+    font-size: 28px;
+    color: black;
+    font-weight: 200;
+    opacity: .9;
+}
+.footer .leftsection .bookmark{
+    justify-content: end;
+    align-items: center;
+    margin-left: 430px;
+    margin-right: auto;
+    float: right;
+}
+
+.likedby{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:start;
+    position: relative;
+
+}
+.likedby >img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    margin-right: 10px;
+
+}
+
+.likedby .liked{
+    margin-top: 18px;
+    font-family: 12px;
+
+}
+.comment{
+    font-size: 14px;
+    color: lightslategrey;
+}
+
+.posts{
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    align-items: center;
+}
+.posts>input[type=text]{
+    padding: 10px;
+    width: 550px;
+    border: none;
+}
+
+.posts>input[type=text]::placeholder{
+    font-style: italic;
+    font-size: 14px;
+}
+.posts .post{
+    font-size: 14px;
+    float: right;
+    cursor: pointer;
+}
+.sidesection{
+    display: flex;
+   flex-direction: column;
+  margin: -105px 0 0 -120px;
+
+}
+
+.userdetail{
+    display: flex;
+    flex-direction: row;
+}
+.userdetail >img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+}
+
+.userdetail .username{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 12px;
+}
+
+.userdetail .username .usr{
+    font-weight: 600;
+    font-size:14px ;
+    margin-bottom: 0;
+}
+
+.userdetail .username .title{
+    font-size: 12px;
+}
+
+.sidesection .suggestion{
+    margin-top: 40px;
+    font-size: 14px;
+    color: gray;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidesection .suggestion>a{
+    margin-right: 15px;
+    text-decoration: none;
+
+}
+
+.sidesection .recommendation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: -15px;
+
+}
+
+.sidesection .recommendation .profilename{
+
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.sidesection .recommendation .profilename >img{
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+}
+.sidesection .recommendation .profilename .details{
+    margin-left: 10px;
+   align-items: center;
+}
+
+.sidesection .recommendation .profilename .details .name{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 14px;
+        margin-bottom: 0;
+        color: grey;
+
+}
+.sidesection .recommendation .profilename .details .follower{
+    font-size: 13px;
+    color: black;
+    opacity: .8;
+
+}
+.recommendation >a{
+    font-size: 12px;
+    color: #00a8ff;
+    margin-right: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
